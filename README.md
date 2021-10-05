@@ -8,7 +8,7 @@
 Copy - Paste
 ```
 fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a; }' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n30
-
+```
 >05.10.2021
 ```
      1  3411  25.1679%     ls
@@ -41,8 +41,6 @@ fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/c
     28  64    0.47222%     source
     29  60    0.442706%    micro
     30  54    0.398436%    scrcpy
-```
-
 ```
 >05.09.2021
 ```
