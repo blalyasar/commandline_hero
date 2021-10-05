@@ -7,7 +7,42 @@
 
 Copy - Paste
 ```
-fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a; }' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n15
+fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a; }' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n30
+
+>05.10.2021
+```
+     1  3411  25.1679%     ls
+     2  2397  17.6861%     cd
+     3  537   3.96222%     cat
+     4  467   3.44573%     git
+     5  387   2.85546%     exit
+     6  360   2.65624%     code
+     7  323   2.38324%     sudo
+     8  321   2.36848%     flutter
+     9  291   2.14713%     python
+    10  283   2.0881%      rm
+    11  282   2.08072%     dnf
+    12  203   1.49782%     adb
+    13  194   1.43142%     pwd
+    14  189   1.39453%     make
+    15  147   1.08463%     echo
+    16  134   0.988711%    telegrambeta
+    17  115   0.848521%    cmake
+    18  103   0.759979%    g++
+    19  94    0.693573%    grepsift
+    20  85    0.627167%    su
+    21  83    0.612411%    mkdir
+    22  83    0.612411%    LS
+    23  79    0.582897%    mv
+    24  78    0.575518%    history
+    25  71    0.523869%    pip
+    26  69    0.509112%    socialmedia
+    27  67    0.494355%    shutdown
+    28  64    0.47222%     source
+    29  60    0.442706%    micro
+    30  54    0.398436%    scrcpy
+```
+
 ```
 >05.09.2021
 ```
