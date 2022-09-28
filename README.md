@@ -42,7 +42,8 @@ fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/c
     28	7    0.578512%   tree
     29	6    0.495868%   stat
     30	6    0.495868%   scutil
-    ´´´
+´´
+    
 >05.12.2021
 ```
      1  4852  25.1908%     ls
