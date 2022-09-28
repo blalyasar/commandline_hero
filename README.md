@@ -12,6 +12,7 @@ fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/c
 
 >29.09.2022
 ´´´
+
      1	148  12.2314%    ls
      2	109  9.00826%    cd
      3	101  8.34711%    python
@@ -42,6 +43,7 @@ fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/c
     28	7    0.578512%   tree
     29	6    0.495868%   stat
     30	6    0.495868%   scutil
+    
 ´´´
     
 >05.12.2021
