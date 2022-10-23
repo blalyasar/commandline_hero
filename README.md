@@ -10,6 +10,7 @@ Copy - Paste
 fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a; }' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n30
 ```
 
+...
 >23.10.2022
 ´´´
      1	1042  19.3321%    ls
@@ -39,7 +40,7 @@ fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/c
     27	32    0.593692%   tree
     29	28    0.519481%   rmdir
     30	28    0.519481%   pip
-    ´´´
+´´´
   
 
 ...
